@@ -13,6 +13,8 @@ import { CreateEntryComponent } from './components/create-entry/create-entry.com
 import { ViewEntryComponent } from './components/view-entry/view-entry.component';
 import { CreateCommentComponent } from './components/create-comment/create-comment.component';
 import { UpdateEntryComponent } from './components/update-entry/update-entry.component';
+import { AdminComponent } from './components/admin/admin.component';
+
 
 
 @NgModule({
@@ -28,6 +30,8 @@ import { UpdateEntryComponent } from './components/update-entry/update-entry.com
     ViewEntryComponent,
     CreateCommentComponent,
     UpdateEntryComponent,
+    AdminComponent,
+
 
   ],
   imports: [

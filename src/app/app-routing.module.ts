@@ -10,6 +10,8 @@ import {CommentsComponent} from './components/comments/comments.component';
 import {CreateEntryComponent} from './components/create-entry/create-entry.component';
 import {ViewEntryComponent }from './components/view-entry/view-entry.component';
 import {UpdateEntryComponent} from './components/update-entry/update-entry.component';
+import {AdminComponent} from './components/admin/admin.component';
+
 const routes: Routes = [
   {
     path: '',
@@ -52,10 +54,10 @@ const routes: Routes = [
     component: UpdateEntryComponent,
     data: { title: 'Actualizar entrada' }
   },{
-    path: '**',
-    redirectTo: '',
-    pathMatch: 'full'
-  } 
+    path: 'view/admin/entry',
+    component: AdminComponent,
+    data: { title: 'Contenido' }
+  }
 ];
 
 @NgModule({

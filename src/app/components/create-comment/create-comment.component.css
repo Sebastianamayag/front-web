@@ -1,0 +1,63 @@
+body{
+    background-image: url('../../../assets/Fondoregistro.png');
+    background-size: 100%;
+    height: 100vh;
+    }
+    
+    .form-registro{
+        float: left;
+        width: 970px;
+        background: #283747;
+        padding: 20px;
+        margin: auto;
+        margin-left: 50px;
+        margin-top: 30px;
+        border-radius: 5px;
+        font-family: 'Arial Narrow';
+        font-size: 16px;
+        color: bisque;
+        box-shadow: 7px 10px 50px grey;
+    }
+    
+    .form-registro h3{
+        font-size: 24px;
+        margin-bottom: 24px;
+        text-align: center;
+    }
+    .cuerpo{
+        width: 100%;
+        background: #ffffff;
+        padding: 8px;
+        border-radius: 5px;
+        margin-bottom: 1px;
+        border: none;
+        font-family: 'Arial Narrow';
+        font-size: 16px;
+    }
+    
+    .form-registro .boton{
+        width: 17%;
+        background: #ffffff;
+        border: none;
+        padding: 8px;
+        color: #283747;
+        margin: 14px 0;
+        font-size: 14px;
+        text-shadow: #010f1d;
+        font-weight: bold;
+        transition: color .15s ease-in-out;
+    }
+    
+    .form-registro .boton2{
+        width: 100%;
+        border: none;
+        background: #ffffff;
+        padding: 8px;
+        color: #283747;
+        margin: 14px 0;
+        font-size: 14px;
+        text-shadow: #010f1d;
+        font-weight: bold;
+        transition: color .15s ease-in-out;
+    }
+    

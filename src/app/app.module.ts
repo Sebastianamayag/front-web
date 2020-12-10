@@ -13,8 +13,7 @@ import { CreateEntryComponent } from './components/create-entry/create-entry.com
 import { ViewEntryComponent } from './components/view-entry/view-entry.component';
 import { CreateCommentComponent } from './components/create-comment/create-comment.component';
 import { UpdateEntryComponent } from './components/update-entry/update-entry.component';
-import { ViewBlogComponent } from './components/view-blog/view-blog.component';
-import { CreateBlogComponent } from './components/create-blog/create-blog.component';
+
 
 @NgModule({
   declarations: [
@@ -29,8 +28,7 @@ import { CreateBlogComponent } from './components/create-blog/create-blog.compon
     ViewEntryComponent,
     CreateCommentComponent,
     UpdateEntryComponent,
-    ViewBlogComponent,
-    CreateBlogComponent
+
   ],
   imports: [
     BrowserModule,

@@ -8,6 +8,8 @@ import {CreateCommentComponent} from './components/create-comment/create-comment
 import {Changep2Component} from './components/changep2/changep2.component';
 import {CommentsComponent} from './components/comments/comments.component';
 import {CreateEntryComponent} from './components/create-entry/create-entry.component';
+import {ViewEntryComponent }from './components/view-entry/view-entry.component';
+import {UpdateEntryComponent} from './components/update-entry/update-entry.component';
 const routes: Routes = [
   {
     path: '',
@@ -41,6 +43,14 @@ const routes: Routes = [
     path: 'user/create/entry',
     component: CreateEntryComponent,
     data: { title: 'Crear entrada' }
+  },{
+    path: 'view/entry/:id',
+    component: ViewEntryComponent,
+    data: { title: 'Ver entrada' }
+  },{
+    path: 'user/update/entry/:id',
+    component: UpdateEntryComponent,
+    data: { title: 'Actualizar entrada' }
   },{
     path: '**',
     redirectTo: '',

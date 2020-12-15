@@ -112,8 +112,22 @@
 .form-registro .boton2{
     width: 20%;
     border: #283747;
-    border-radius: 8px;
+    border-radius: 5px;
     background: #ffffff;
+    padding: 8px;
+    color: #283747;
+    margin: 10px 10px 10px 0;
+    font-size: 14px;
+    text-shadow: #010f1d;
+    font-weight: bold;
+    transition: color .15s ease-in-out;
+}
+
+.form-registro .boton2:hover{
+    width: 20%;
+    border: chartreuse;
+    border-radius: 5px;
+    background: chocolate;
     padding: 8px;
     color: #283747;
     margin: 10px 10px 10px 0;

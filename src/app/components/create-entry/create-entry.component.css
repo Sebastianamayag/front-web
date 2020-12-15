@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+content: "\f13b";
+
 body{
     background-image: url('../../../assets/Fondoentradacomentario.png');
     background-size: 100%;
@@ -159,7 +161,7 @@ body{
 .columna_titulo{
     color: #283747;
     margin: 14px 0;
-    font-size: 24px;
+    font-size: 20px;
     text-shadow: #010f1d;
     font-weight: bold;
     transition: color .15s ease-in-out;

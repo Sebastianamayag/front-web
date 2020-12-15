@@ -5,10 +5,15 @@
             <div>
                 <form action="" method="POST">
                     <input class= "entrada" type="text" placeholder="Titulo Nueva Entrada">
+                    <select id="Estado" name="Estado">
+                        <option value="Publico" selected>Público</option>
+                        <option value="Privado">Privado</option>
+                      </select>
                     <input class= "boton" type="submit" value="Publicar">
                     <br>
                     <textarea class= "cuerpo"  name="cuerpo_entrada" id="" cols="103" rows="20" spellcheck="true" placeholder="Escribe el cuerpo de tu Entrada"></textarea>
-                    <input class= "boton2" type="submit" value="Cancelar">  
+                    <input class= "boton2" type="submit" value="Publicar">  
+                    <input class= "boton2" type="submit" value="Cancelar">                      
                 </form>
             </div>
         </section>

@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-content: "\f13b";
 
 body{
     background-image: url('../../../assets/Fondoentradacomentario.png');
@@ -113,6 +112,7 @@ body{
     text-shadow: #010f1d;
     font-weight: bold;
     transition: color .15s ease-in-out;
+    cursor: pointer;
 }
 
 .form-registro .boton2{
@@ -127,6 +127,7 @@ body{
     text-shadow: #010f1d;
     font-weight: bold;
     transition: color .15s ease-in-out;
+    cursor: pointer;
 }
 
 .form-registro .boton2:hover{

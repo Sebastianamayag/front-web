@@ -2,9 +2,11 @@
     <section class="form-registro"> 
         <h3>Inicia Sesión</h3>
         <form action="" method="post">
-            <input class= "entrada" type="email" name="Correo" id="Correo" placeholder="Ingrese su cuenta de correo">
-            <input class= "entrada" type="password" name="Contraseña" id="Contraseña" placeholder="Ingrese su contraseña">
-            <input class= "boton" type="submit" (click)="loguearse()" value="Entrar al Blog">
+            <input class= "email" type="email" name="Correo" id="Correo" placeholder="Ingrese su cuenta de correo">
+            <br>
+            <input class= "pass" type="password" name="Contraseña" id="Contraseña" placeholder="Ingrese su contraseña">
+            <br>
+            <input class= "entrar" type="submit" (click)="loguearse()" value="Entrar al Blog">
             <p> <a [routerLink]="['', 'user', 'change' , 'password']" >¿Se te olvidó la contraseña?, ¡Recuperala!</a> </p>
             <p> <a [routerLink]="['', 'user', 'register']" >¿No tienes cuenta?, Registrate</a> </p>
         </form>

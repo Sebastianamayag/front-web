@@ -25,11 +25,12 @@ body{
         text-align: center;
     }
     .cuerpo{
-        width: 100%;
+        width: 98%;
+        /* height: 100%; */
         background: #ffffff;
         padding: 8px;
         border-radius: 5px;
-        margin-bottom: 1px;
+        margin: 8px 5px 5px 0;
         border: none;
         font-family: 'Arial Narrow';
         font-size: 16px;

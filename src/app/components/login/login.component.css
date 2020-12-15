@@ -6,4 +6,99 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 24px;
+}
+
+.form-registro{
+    text-align: center;
+    font-size: 40px;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 40px;
+}
+
+.pass{
+    background: url('../../../assets/pass.png') 5px no-repeat;
+    width: 82%;
+    padding: 18px 0 18px 70px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 10px;
+    -moz-transition:all 0.5s;
+    text-align: 50px;
+    border:2px solid bisque;
+    color: bisque;
+    }
+
+    .pass:focus{
+        background: url('../../../assets/pass2.png') 5px no-repeat;
+        width: 82%;
+        padding: 18px 0 18px 70px;
+        font-weight: bold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-bottom: 10px;
+        -moz-transition:all 0.5s;
+        text-align: 50px;
+        border:2px solid chartreuse;
+        color: chartreuse;
+        }
+
+    .email{
+        background: url('../../../assets/correo.png') 5px no-repeat;
+        width: 82%;
+        padding: 18px 0 18px 70px;
+        font-weight: bold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-bottom: 10px;
+        -moz-transition:all 0.5s;
+        text-align: 50px;
+        border:2px solid bisque;
+        color: bisque;
+        }
+    
+        .email:focus{
+            background: url('../../../assets/correo2.png') 5px no-repeat;
+            width: 82%;
+            padding: 18px 0 18px 70px;
+            font-weight: bold;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-bottom: 10px;
+            -moz-transition:all 0.5s;
+            text-align: 50px;
+            border:2px solid chartreuse;
+            color: chartreuse;
+            }
+
+.entrar{
+    width: 100%;
+    border: #283747;
+    border-radius: 5px;
+    background: #ffffff;
+    padding: 12px;
+    color: #283747;
+    margin: 10px 10px 10px 0;
+    font-size: 18px;
+    text-align: center;
+    text-shadow: #010f1d;
+    font-weight: bold;
+    transition: color .15s ease-in-out;
+    cursor: pointer;
+}
+
+.entrar:hover{
+    width: 100%;
+    border: #283747;
+    border-radius: 5px;
+    background: bisque;
+    padding: 12px;
+    color: chocolate;
+    margin: 10px 10px 10px 0;
+    font-size: 18px;
+    text-align: center;
+    text-shadow: #010f1d;
+    font-weight: bold;
+    transition: color .15s ease-in-out;
+    cursor: pointer;
 }

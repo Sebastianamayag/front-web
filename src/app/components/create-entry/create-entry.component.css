@@ -137,7 +137,7 @@
     transition: color .15s ease-in-out;
 }
 
-.columna_entrada{
+.columna_categoria{
     float: left;
     width: 100%;
     border: none;
@@ -145,7 +145,16 @@
     padding: 8px;
     color: #283747;
     margin: 14px 0;
-    font-size: 14px;
+    font-size: 18px;
+    text-shadow: #010f1d;
+    font-weight: bold;
+    transition: color .15s ease-in-out;
+}
+
+.columna_titulo{
+    color: #283747;
+    margin: 14px 0;
+    font-size: 24px;
     text-shadow: #010f1d;
     font-weight: bold;
     transition: color .15s ease-in-out;

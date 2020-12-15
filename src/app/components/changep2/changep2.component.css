@@ -52,14 +52,27 @@ color: bisque;
 }
 
 .pass:focus{
-    background: url('../../../assets/pass2.png') 5px no-repeat;
-    width: 82%;
-    padding: 18px 0 18px 70px;
-    font-weight: bold;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-bottom: 10px;
-    -moz-transition:all 0.5s;
-    text-align: 50px;
-    border:2px solid chartreuse;
-    color: chartreuse;
-    }
+background: url('../../../assets/pass2.png') 5px no-repeat;
+width: 82%;
+padding: 18px 0 18px 70px;
+font-weight: bold;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+margin-bottom: 10px;
+-moz-transition:all 0.5s;
+text-align: 50px;
+border:2px solid chartreuse;
+color: chartreuse;
+}
+
+.form-registro{
+    width: 450px;
+    background: #283747;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 5px;
+    font-family: 'Arial Narrow';
+    font-size: 16px;
+    color: bisque;
+    box-shadow: 7px 10px 50px grey;
+}

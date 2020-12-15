@@ -32,7 +32,7 @@ body{
     padding: 20px;
     margin: auto;
     margin-left: 30px;
-    margin-top: 30px;
+    margin-top: 50px;
     border-radius: 5px;
     font-family: 'Arial Narrow';
     font-size: 16px;
@@ -149,6 +149,7 @@ body{
     padding: 8px;
     color: #283747;
     margin: 14px 0;
+    margin-top: 50px;
     font-size: 18px;
     text-shadow: #010f1d;
     font-weight: bold;

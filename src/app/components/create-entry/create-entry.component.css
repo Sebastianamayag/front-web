@@ -95,13 +95,13 @@
     }
 
 .form-registro .boton{
-    width: 19%;
+    width: 18%;
     border-radius: 5px;
     background: #ffffff;
     border: none;
     padding: 8px;
     color: #283747;
-    margin: 14px 0 14px 18px;
+    /* margin: 14px 0 14px 18px; */
     font-size: 14px;
     text-shadow: #010f1d;
     font-weight: bold;

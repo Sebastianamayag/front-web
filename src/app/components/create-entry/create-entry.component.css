@@ -2,10 +2,13 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    background-image: url('../../../assets/Fondoentradacomentario.png');
 }
 
-
+body{
+    background-image: url('../../../assets/Fondoentradacomentario.png');
+    background-size: 100%;
+    height: 100vh;
+    }
 
 .form-registro{
     float: left;

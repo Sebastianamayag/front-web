@@ -40,7 +40,7 @@ footer
   width: 500px;
   background-color: red;
   margin: 3px;
-  
+  text-align: end;
 }
 
 .privado{

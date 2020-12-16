@@ -100,7 +100,7 @@ font-size: 12px;
 
 .body{
     font-family:  Georgia, Times, 'Times New Roman', serif;
-    background-image: url('../../../assets/Fondoregistro.png');
+    background-image: url('../../../assets/Fondopublicaciones.png');
     background-size: cover;
     height: 80vh;
     display: flex;

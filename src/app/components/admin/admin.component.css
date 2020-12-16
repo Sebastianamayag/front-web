@@ -15,20 +15,20 @@
 }
 
 footer
-    {
-      position: absolute;
-        margin-top:50%;
-        width:100%;
-        height:40px;
-        background-color:bisque;
-        text-align: center;
-        bottom: 0;
-        color: #283747;
-        font-weight: bold;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 10px;
-      
-    }
+{
+position: absolute;
+/* margin-top:50%; */
+width:100%;
+height:40px;
+background-color:bisque;
+text-align: center;
+bottom: 0;
+color: #283747;
+font-weight: bold;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 10px;
+vertical-align: middle;
+}
 
 /* .blogs{
   width: 500px;
@@ -37,30 +37,17 @@ footer
   align-items: center;
 } */
 .publico{
-  width: 500px;
+  width: 600px;
   background-color: red;
   margin: 3px;
   text-align: end;
-  /* align-items: center; */
-  display: block;
-  position: relative; 
-  /* margin-top: 10px;
-  margin-bottom: 12px;    */
-  align-items: center;
-  font-size: 18px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  justify-content: space-between;   
-  
 }
 
 .privado{
-  width: 500px;
+  width: 600px;
   background-color: blueviolet;
   margin: 3px;
- 
+  text-align: start;
 }
 
 .contenedorpublicacion{

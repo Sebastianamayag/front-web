@@ -41,13 +41,26 @@ footer
   background-color: red;
   margin: 3px;
   text-align: end;
+  /* align-items: center; */
+  display: block;
+  position: relative; 
+  /* margin-top: 10px;
+  margin-bottom: 12px;    */
+  align-items: center;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  justify-content: space-between;   
+  
 }
 
 .privado{
   width: 500px;
   background-color: blueviolet;
   margin: 3px;
-  align-items: center;
+ 
 }
 
 .contenedorpublicacion{
@@ -63,7 +76,7 @@ footer
     -ms-user-select: none;
     user-select: none;
     justify-content: space-between;
-    width: max-content;
+    /* width: max-content; */
     margin-left: 0%;
 }
 

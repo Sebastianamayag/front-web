@@ -4,32 +4,59 @@
     box-sizing: border-box;
 }
 
+.body{
+  font-family:  Georgia, Times, 'Times New Roman', serif;
+  background-image: url('../../../assets/Fondopublicaciones.png');
+  background-size: cover;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  }
+
 footer
-    {
-        margin-top:50px;
-        width:100%;
-        height:40px;
-        background-color:bisque;
-        
-        text-align: center;
-
-        bottom: 0;
-        position: absolute;
-    }
-
-footer .p{
-margin-top: 50%;
+{
+position: absolute;
+/* margin-top:50%; */
+width:100%;
+height:40px;
+background-color:bisque;
+text-align: center;
+bottom: 0;
+color: #283747;
 font-weight: bold;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
-color: #283747;
-font-size: 12px;
+font-size: 10px;
+vertical-align: middle;
 }
 
+/* .blogs{
+  width: 500px;
+  background-color: none;
+  margin: 3px;
+  align-items: center;
+} */
+.publico{
+  width: 600px;
+  background-color: none;
+  margin: 3px;
+  margin-top: 220px;
+  text-align: end;
+}
+
+.privado{
+  width: 600px;
+  background-color: none;
+  margin: 3px;
+  margin-top: 220px;
+  text-align: start;
+}
 
 .contenedorpublicacion{
     display: block;
     position: relative;
-    padding-left: 35px;
+    /* padding-left: 35px; */
+    margin-top: 10px;
     margin-bottom: 12px;
     cursor: pointer;
     font-size: 18px;
@@ -38,8 +65,8 @@ font-size: 12px;
     -ms-user-select: none;
     user-select: none;
     justify-content: space-between;
-    width: max-content;
-    margin: auto;
+    /* width: max-content; */
+    margin-left: 0%;
 }
 
 /* Hide the browser's default checkbox */
@@ -98,15 +125,6 @@ font-size: 12px;
   }
 
 
-.body{
-    font-family:  Georgia, Times, 'Times New Roman', serif;
-    background-image: url('../../../assets/Fondoregistro.png');
-    background-size: cover;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .nav-bar{
     display: flex;
@@ -119,82 +137,7 @@ font-size: 12px;
     font-weight: bold;
 }
 
-.form-registro{
-    float: left;
-    width: 970px;
-    background: #283747;
-    padding: 20px;
-    margin: auto;
-    margin-left: 50px;
-    margin-top: 30px;
-    border-radius: 5px;
-    font-family: 'Arial Narrow';
-    font-size: 16px;
-    color: bisque;
-    box-shadow: 7px 10px 50px grey;
-}
 
-.panelderecho{
-    float: left;
-    width: 270px;
-    background: #283747;
-    padding: 20px;
-    margin: auto;
-    margin-left: 30px;
-    margin-top: 30px;
-    border-radius: 5px;
-    font-family: 'Arial Narrow';
-    font-size: 16px;
-    color: bisque;
-    box-shadow: 7px 10px 50px grey;
-}
-
-.form-registro h3{
-    font-size: 24px;
-    margin-bottom: 24px;
-    text-align: center;
-}
-
-.entradapanel{
-    width: 100%;
-    border-bottom: #283747;
-    background: #ffffff;
-    padding: 8px;
-    border-radius: 5px;
-    margin-bottom: 1px;
-    border: #0a325e;
-    font-family: 'Arial Narrow';
-    font-size: 16px;
-}
-
-.cuerpo{
-    width: 100%;
-    background: #ffffff;
-    padding: 8px;
-    border-radius: 5px;
-    margin-bottom: 1px;
-    border: none;
-    font-family: 'Arial Narrow';
-    font-size: 16px;
-}
-
-.form-registro p{
-    height: 40px;
-    text-align: center;
-    font-size: 16px;
-    line-height: 40px;
-    }
-
-.form-registro a{
-    color: chartreuse;
-    text-decoration: none;
-    }
-
-.form-registro a:hover{
-    color: chartreuse;
-    text-decoration: aqua;
-
-    }
 
 .boton{
     width: 20%;
@@ -217,48 +160,6 @@ font-size: 12px;
     color: #283747;
     text-align: center;
     padding-bottom: 20px;
-}
-.nav-bar ul li{
-    display: inline;
-    margin-right: 50px;
-}
-
-.form-registro .boton2{
-    width: 100%;
-    border: none;
-    background: #ffffff;
-    padding: 8px;
-    color: #283747;
-    margin: 14px 0;
-    font-size: 14px;
-    text-shadow: #010f1d;
-    font-weight: bold;
-    transition: color .15s ease-in-out;
-}
-
-.columna_entrada{
-    float: left;
-    width: 100%;
-    border: none;
-    background: #ffffff;
-    padding: 8px;
-    color: #283747;
-    margin: 14px 0;
-    font-size: 14px;
-    text-shadow: #010f1d;
-    font-weight: bold;
-    transition: color .15s ease-in-out;
-}
-
-.comentario{
-    width: 100%;
-    background: none;
-    padding: 8px;
-    border-radius: 5px;
-    margin-bottom: 1px;
-    border: none;
-    font-family: 'Arial Narrow';
-    font-size: 9px;
 }
 
 /* Add a black background color to the top navigation bar */

@@ -30,9 +30,22 @@ footer
       
     }
 
-.blogs{
+/* .blogs{
   width: 500px;
-  background-color: cornflowerblue;
+  background-color: none;
+  margin: 3px;
+  align-items: center;
+} */
+.publico{
+  width: 500px;
+  background-color: red;
+  margin: 3px;
+  
+}
+
+.privado{
+  width: 500px;
+  background-color: blueviolet;
   margin: 3px;
   align-items: center;
 }

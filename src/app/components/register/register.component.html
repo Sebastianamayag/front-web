@@ -1,18 +1,66 @@
 <body>
     <section class="form-registro"> 
         <h3>Formulario de Registro</h3>
-        <form method="post">
-            <input class= "entrada" type="text" name="Apellidos" id="Apellidos" placeholder="Ingrese sus apellidos">
-            <input class= "entrada" type="text" name="Nombres" id="Nombres" placeholder="Ingrese sus nombres">            
-            <input class= "entrada" type="email" name="Correo" id="Correo" placeholder="Ingrese su cuenta de correo">
-            <input class= "entrada" type="password" name="Contraseña" id="Contraseña" placeholder="Ingrese su contraseña">
-            <input class= "entrada" type="password" name="Contraseña2" id="Contraseña2" placeholder="Repita su contraseña">            
-            <input class= "entrada" type="text" name="Nickname" id="Nombre" placeholder="Ingrese su nickname">
-            <!-- <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a> </p> -->
-            <!-- <div class="g-recaptcha" data-sitekey="aquivaelcodigo"></div> -->
+        <form method="post" [formGroup]="registerGroup" (ngSubmit)="doRegister()">
+            <input class= "entrada" type="text" name="Apellidos" formControlName="apellidos" id="Apellidos"  placeholder="Ingrese sus apellidos">
+            <div class="alert-danger" *ngIf="apellidos.invalid  && (apellidos.dirty || apellidos.touched) " > 
+                <div class="container-error-messsage" *ngIf="apellidos.errors.required"> 
+                    El apellido es requerido
+                </div>
+                <div class="container-error-messsage" *ngIf="apellidos.errors.minlength"> 
+                    El apellido tiene al menos 5 letras
+                </div>
+            </div>
+            <input class= "entrada" type="text" name="Nombres" formControlName="nombre" id="Nombres" placeholder="Ingrese sus nombres">
+            <div class="alert-danger" *ngIf="nombre.invalid  && (nombre.dirty || nombre.touched) " > 
+                <div class="container-error-messsage" *ngIf="nombre.errors.required"> 
+                    El nombre es requerido
+                </div>
+                <div class="container-error-messsage" *ngIf="nombre.errors.minlength"> 
+                    El nombre tiene al menos 5 letras
+                </div>
+            </div>            
+            <input class= "entrada" type="email" name="Correo" formControlName="correo" id="Correo" placeholder="Ingrese su cuenta de correo">
+            <div class="alert-danger" *ngIf="correo.invalid  && (correo.dirty || correo.touched) " > 
+                <div class="container-error-messsage" *ngIf="correo.errors.required"> 
+                    El correo es requerido
+                </div>
+                <div class="container-error-messsage" *ngIf="correo.errors.minlength"> 
+                    El correo tiene al menos 5 letras
+                </div>
+                <div class="container-error-messsage" *ngIf="(correo.dirty || correo.touched) && correo.invalid && correo.errors.pattern"> 
+                    El correo tiene que ser valido
+                </div>
+            </div>
+            <input class= "entrada" type="password" name="Contraseña" formControlName="contrasena" id="Contraseña" placeholder="Ingrese su contraseña">
+            <div class="alert-danger" *ngIf="contrasena.invalid  && (contrasena.dirty || contrasena.touched) " > 
+                <div class="container-error-messsage" *ngIf="contrasena.errors.required"> 
+                    La contraseña es requerido
+                </div>
+                <div class="container-error-messsage" *ngIf="contrasena.errors.minlength"> 
+                    La contraseña tiene al menos 8 letras
+                </div>
+            </div>  
+            <input class= "entrada" type="password" name="Contraseña2" formControlName="repetirContrasena" id="Contraseña2" placeholder="Repita su contraseña">
+            <div class="alert-danger" *ngIf="repetirContrasena.invalid  && (repetirContrasena.dirty || repetirContrasena.touched) " > 
+                <div class="container-error-messsage" *ngIf="repetirContrasena.errors.required"> 
+                    El campo de repetirContraseña es requerido
+                </div>
+                <div class="container-error-messsage" *ngIf="repetirContrasena.errors.minlength"> 
+                    El campo de  repetirContraseña debe tener al menos 8 letras
+                </div>
+            </div>              
+            <input class= "entrada" type="text" name="Nickname" formControlName="usuario"  id="Nombre" placeholder="Ingrese su nickname">
+            <div class="alert-danger" *ngIf="usuario.invalid  && (usuario.dirty || usuario.touched) " > 
+                <div class="container-error-messsage" *ngIf="usuario.errors.required"> 
+                    El Nickname es requerido
+                </div>
+                <div class="container-error-messsage" *ngIf="usuario.errors.minlength"> 
+                    El Nickname tiene al menos 5 letras
+                </div>
+            </div>  
             <input class= "boton" type="submit" value="Quiero Registrarme">
             <p> <a [routerLink]="['', 'user', 'login']" >¿Ya tienes cuenta?, Inicia Sesión</a> </p>
-            <!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
 
         </form>
     </section>

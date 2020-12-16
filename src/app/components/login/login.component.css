@@ -24,7 +24,7 @@ body{
     width: 82%;
     padding: 18px 0 18px 70px;
     font-weight: bold;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:  Georgia, Times, 'Times New Roman', serif;
     margin-bottom: 10px;
     -moz-transition:all 0.5s;
     text-align: 50px;
@@ -37,7 +37,7 @@ body{
         width: 82%;
         padding: 18px 0 18px 70px;
         font-weight: bold;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family:  Georgia, Times, 'Times New Roman', serif;
         margin-bottom: 10px;
         -moz-transition:all 0.5s;
         text-align: 50px;

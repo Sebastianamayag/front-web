@@ -57,7 +57,11 @@ const routes: Routes = [
     path: 'view/admin/entry',
     component: AdminComponent,
     data: { title: 'Contenido' }
-  }
+  },{
+    path: '**',
+    redirectTo: '',
+    pathMatch: 'full'
+  } 
 ];
 
 @NgModule({

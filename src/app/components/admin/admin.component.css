@@ -37,13 +37,6 @@ footer
   align-items: center;
 }
 
-.publico{
-  width: 500px;
-  background-color: cornflowerblue;
-  margin: 3px;
-  align-items: center;
-}
-
 .contenedorpublicacion{
     display: block;
     position: relative;

@@ -80,9 +80,14 @@ html{
 }
 
 .bg-email-correct{
-    background-color: #33FFA2;
+    /* background-color: #33FFA2; */
+    background-image: url('src\assets\Fondoverificado.png');
+    
+    background-size: cover;
 }
 
 .bg-email-incorrect{
-    background-color: #FF3C33;
+    /* background-color: #FF3C33; */
+    background-image: url('src\assets\FondoNOverificado.png');
+    background-size: cover;
 }

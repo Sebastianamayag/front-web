@@ -21,10 +21,12 @@ export class ValidateUserComponent implements OnInit {
       console.log(response)
       if(response.name){
         document.body.classList.add('bg-email-correct');
-        this.verificacion="Verificado";
+        // this.verificacion="Verificado";
+        this.verificacion=".";
       }else{
         document.body.classList.add('bg-email-incorrect');
-        this.verificacion="No Verificado";
+        // this.verificacion="No Verificado";
+        this.verificacion=".";
       }
     })
   }

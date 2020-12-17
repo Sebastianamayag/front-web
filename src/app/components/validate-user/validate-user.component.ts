@@ -11,7 +11,6 @@ export class ValidateUserComponent implements OnInit {
 
   constructor(private activated:ActivatedRoute,private usuarioservice: UserServiceService,private router: Router) { }
   token="";
-  verificacion="";
   ngOnInit(): void {
     this.token=this.activated.snapshot.params.id;
     console.log(this.token);
@@ -21,12 +20,8 @@ export class ValidateUserComponent implements OnInit {
       console.log(response)
       if(response.name){
         document.body.classList.add('bg-email-correct');
-        // this.verificacion="Verificado";
-        this.verificacion=".";
       }else{
         document.body.classList.add('bg-email-incorrect');
-        // this.verificacion="No Verificado";
-        this.verificacion=".";
       }
     })
   }

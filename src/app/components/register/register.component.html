@@ -8,7 +8,7 @@
                     El apellido es requerido
                 </div>
                 <div class="container-error-messsage" *ngIf="apellidos.errors.minlength"> 
-                    El apellido tiene al menos 5 letras
+                    El apellido tiene al menos 3 letras
                 </div>
             </div>
             <input class= "entrada" type="text" name="Nombres" formControlName="nombre" id="Nombres" placeholder="Ingrese sus nombres">
@@ -17,7 +17,7 @@
                     El nombre es requerido
                 </div>
                 <div class="container-error-messsage" *ngIf="nombre.errors.minlength"> 
-                    El nombre tiene al menos 5 letras
+                    El nombre tiene al menos 3 letras
                 </div>
             </div>            
             <input class= "entrada" type="email" name="Correo" formControlName="correo" id="Correo" placeholder="Ingrese su cuenta de correo">

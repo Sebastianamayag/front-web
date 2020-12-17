@@ -32,7 +32,7 @@ export class LoginComponent implements OnInit {
       }).subscribe(response=>{
           console.log(response.token)
           if(response.success){
-            this.usuarioservice.saveToken(response.token);
+            this.usuarioservice.saveElement('token',response.token);
             Swal.fire({
               title: 'Bienvenido',
               text: `${response.success}`,

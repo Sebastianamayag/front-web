@@ -17,14 +17,23 @@ export class UserServiceService {
   validateUser(body:{token:string}):Observable<any>{
     return this.http.post<any>(`${environment.root_api}${environment.endpoints.validate_user}`,body);
   }
-  saveToken(token:string){
-    localStorage.setItem('token',token);
+
+  changePassword(body:{correo:string}):Observable<any>{
+    return this.http.post<any>(`${environment.root_api}${environment.endpoints.change_password}`,body);
   }
-  delToken(){
-    localStorage.removeItem('token')
+
+  changePassword2(body:{correo:string,contraseña:string}):Observable<any>{
+    return this.http.put<any>(`${environment.root_api}${environment.endpoints.change_password}`,body)
   }
-  getToken(){
-    const token=localStorage.getItem('token');
-    return token;
+
+  saveElement(name:string,value:string){
+    localStorage.setItem(name,value);
+  }
+  delElement(value){
+    localStorage.removeItem(value)
+  }
+  getElement(value:string){
+    const values=localStorage.getItem(value);
+    return values;
   }
 }

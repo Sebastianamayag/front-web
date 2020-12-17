@@ -1,9 +1,25 @@
 <body>
     <section class="form-registro"> 
-        <form method="post">
+        <form method="post" [formGroup]="changeForm" (ngSubmit)="doChange()" >
             <h3>Actualiza la contraseña</h3>
-            <input class= "pass" type="password" name="pass1" id="pass1" placeholder="Ingrese su nueva contraseña">
-            <input class= "pass" type="password" name="pass2" id="pass2" placeholder="Ingrese nuevamente la contraseña">
+            <input class= "pass" type="password" name="Contraseña" formControlName="contrasena" id="Contraseña" placeholder="Ingrese su contraseña">
+            <div class="alert-danger" *ngIf="contrasena.invalid  && (contrasena.dirty || contrasena.touched) " > 
+                <div class="container-error-messsage" *ngIf="contrasena.errors.required"> 
+                    La contraseña es requerido
+                </div>
+                <div class="container-error-messsage" *ngIf="contrasena.errors.minlength"> 
+                    La contraseña tiene al menos 8 letras
+                </div>
+            </div>  
+            <input class= "pass" type="password" name="Contraseña2" formControlName="repetirContrasena" id="Contraseña2" placeholder="Repita su contraseña">
+            <div class="alert-danger" *ngIf="repetirContrasena.invalid  && (repetirContrasena.dirty || repetirContrasena.touched) " > 
+                <div class="container-error-messsage" *ngIf="repetirContrasena.errors.required"> 
+                    El campo de repetirContraseña es requerido
+                </div>
+                <div class="container-error-messsage" *ngIf="repetirContrasena.errors.minlength"> 
+                    El campo de  repetirContraseña debe tener al menos 8 letras
+                </div>
+            </div>
             <input class= "boton" type="submit" value="Recuperar Contraseña">
         </form>
     </section>

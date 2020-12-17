@@ -17,8 +17,8 @@ export class RegisterComponent implements OnInit {
 
   ngOnInit(): void {
     this.registerGroup = this.builder.group( {
-      apellidos: [ { value: '', disabled: false }, [ Validators.required,Validators.minLength(5) ] ],
-      nombre: [ { value: '', disabled: false }, [ Validators.required,Validators.minLength(5) ] ],
+      apellidos: [ { value: '', disabled: false }, [ Validators.required,Validators.minLength(3) ] ],
+      nombre: [ { value: '', disabled: false }, [ Validators.required,Validators.minLength(3) ] ],
       correo: [ { value: '', disabled: false }, [ Validators.required,Validators.minLength(5),Validators.pattern(this.emailPattern) ] ],
       usuario: [ { value: '', disabled: false }, [ Validators.required,Validators.minLength(5) ] ],
       contrasena: [ { value: '', disabled: false }, [ Validators.required ,Validators.minLength(8)] ],

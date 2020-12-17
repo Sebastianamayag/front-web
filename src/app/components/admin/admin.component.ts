@@ -13,7 +13,7 @@ export class AdminComponent implements OnInit {
               private router: Router) { }
   token="";
   ngOnInit(): void {
-    this.token=this.usuarioservice.getToken();
+    this.token=this.usuarioservice.getElement('token');
     if(this.token==null){
       this.router.navigate(['']);
     }

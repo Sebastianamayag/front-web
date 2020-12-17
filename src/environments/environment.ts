@@ -4,7 +4,8 @@ export const environment = {
   endpoints: {
     create_user: '/usuario',
     login_user:'/usuario/login',
-    validate_user:'/user/verify'
+    validate_user:'/user/verify',
+    change_password:'/usuario/password',
   },
 };
 

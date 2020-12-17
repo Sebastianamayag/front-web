@@ -18,6 +18,7 @@ export class ValidateUserComponent implements OnInit {
     this.usuarioservice.validateUser({
       token:this.token
     }).subscribe(response=>{
+      console.log(response)
       if(response.name){
         document.body.classList.add('bg-email-correct');
         this.verificacion="Verificado";

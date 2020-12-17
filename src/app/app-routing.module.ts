@@ -11,7 +11,7 @@ import {CreateEntryComponent} from './components/create-entry/create-entry.compo
 import {ViewEntryComponent }from './components/view-entry/view-entry.component';
 import {UpdateEntryComponent} from './components/update-entry/update-entry.component';
 import {AdminComponent} from './components/admin/admin.component';
-
+import {ValidateUserComponent} from './components/validate-user/validate-user.component';
 const routes: Routes = [
   {
     path: '',
@@ -57,6 +57,10 @@ const routes: Routes = [
     path: 'view/admin/entry',
     component: AdminComponent,
     data: { title: 'Contenido' }
+  },{
+    path: 'user/validate/:id',
+    component: ValidateUserComponent,
+    data: { title: 'Validar Usuario' }
   },{
     path: '**',
     redirectTo: '',

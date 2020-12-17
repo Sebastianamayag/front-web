@@ -41,7 +41,32 @@ export class RegisterComponent implements OnInit {
         })
         return;
       }
-      this.onResetForm();
+      this.usuarioservice.registerUser({
+        apellido:this.apellidos.value,
+        nombre:this.nombre.value,
+        correo:this.correo.value,
+        contraseña:this.contrasena.value,
+        nomUsuario:this.usuario.value
+      }).subscribe(response=>{
+          console.log(response);
+          if(response.success){
+            Swal.fire({
+              title: 'Bienvenido',
+              text: `${response.mensaje}`,
+              icon: 'success',
+              confirmButtonText: 'Ok'
+            })
+            this.onResetForm();
+            this.router.navigate(['/user/login']);
+          }else{
+            Swal.fire({
+              title: 'Error',
+              text: `${response.error}`,
+              icon: 'error',
+              confirmButtonText: 'Ok'
+            })
+          }
+      })
     }else{
       console.log('no valido')
     }

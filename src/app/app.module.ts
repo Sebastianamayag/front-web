@@ -15,6 +15,7 @@ import { ViewEntryComponent } from './components/view-entry/view-entry.component
 import { CreateCommentComponent } from './components/create-comment/create-comment.component';
 import { UpdateEntryComponent } from './components/update-entry/update-entry.component';
 import { AdminComponent } from './components/admin/admin.component';
+import { ValidateUserComponent } from './components/validate-user/validate-user.component';
 
 
 
@@ -32,6 +33,7 @@ import { AdminComponent } from './components/admin/admin.component';
     CreateCommentComponent,
     UpdateEntryComponent,
     AdminComponent,
+    ValidateUserComponent,
 
 
   ],

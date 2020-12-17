@@ -78,3 +78,11 @@ html{
 .container-error-message{
     padding: 3px;
 }
+
+.bg-email-correct{
+    background-color: #33FFA2;
+}
+
+.bg-email-incorrect{
+    background-color: #FF3C33;
+}

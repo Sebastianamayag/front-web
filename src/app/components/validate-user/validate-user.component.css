@@ -1,0 +1,22 @@
+body{
+    font-family:  Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    flex: 1;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.content-validate{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 2px solid #fff;
+    padding: 20px;
+    border-radius: 20px;
+}
+.content-validate p{
+    font-size: 20px;
+}

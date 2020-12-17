@@ -26,8 +26,30 @@ export class LoginComponent implements OnInit {
   }
   doLogin() {
     if(this.LoginGroup.valid){
-      this.onResetForm();
-      this.router.navigate(['/view/admin/entry']);
+      this.usuarioservice.loginUser({
+        correo:this.correo.value,
+        contraseña:this.contrasena.value
+      }).subscribe(response=>{
+          console.log(response.token)
+          if(response.success){
+            this.usuarioservice.saveToken(response.token);
+            Swal.fire({
+              title: 'Bienvenido',
+              text: `${response.success}`,
+              icon: 'success',
+              confirmButtonText: 'Ok'
+            })
+            this.onResetForm();
+            this.router.navigate(['/view/admin/entry']);
+          }else{
+            Swal.fire({
+              title: 'Error',
+              text: `${response.error}`,
+              icon: 'error',
+              confirmButtonText: 'Ok'
+            })
+          }
+      })
     }else{
       console.log('formulario invalido')
     }

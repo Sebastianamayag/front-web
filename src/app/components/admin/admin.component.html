@@ -1,12 +1,12 @@
 <header>
         <div class="topnav">
             <a class="active" href="crear_entrada.html" [routerLink]="['', 'user', 'create' , 'entry']">Nueva</a>
-            <a href="#">Actualizar</a>
+            <a (click)="doUpdate()">Actualizar</a>
             <a href="#">Eliminar</a>
-            <a href="#">Cerrar Sesión</a>
+            <a (click)="doOut()">Cerrar Sesión</a>
             <div class="contenedor">
-                <form>
-                    <input  type="text" placeholder="Publicación..." name="publicacion">
+                <form  method="post" [formGroup]="searchGroup" (ngSubmit)="doSearch()" >
+                    <input  type="text" formControlName="title" placeholder="Publicación..." name="publicacion">
                     <button class="buscarpublicacion"  type="submit">Buscar</button>
                 </form>
             </div>

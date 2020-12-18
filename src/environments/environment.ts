@@ -6,6 +6,7 @@ export const environment = {
     login_user:'/usuario/login',
     validate_user:'/user/verify',
     change_password:'/usuario/password',
+    searchEntry:'/blog/buscar/',
   },
 };
 

@@ -25,7 +25,15 @@ export class UserServiceService {
   changePassword2(body:{correo:string,contraseña:string}):Observable<any>{
     return this.http.put<any>(`${environment.root_api}${environment.endpoints.change_password}`,body)
   }
-
+  /*getUser(email:string):Observable<any>{
+    return this.http.get<any>(`${ environment.root_api }${ environment.endpoints.get_user }`,{params:{email}});
+  }*/
+  /*getPayment(body:{iduser:number}):Observable<any>{
+    return this.http.get<any>(`${environment.root_api}${environment.endpoints.get_Payments}?iduser=${body.iduser}`);
+  };*/
+  searchEntry(body:{title:string}):Observable<any>{
+    return this.http.get<any>(`${environment.root_api}${environment.endpoints.searchEntry}?title=${body.title}`)
+  }
   saveElement(name:string,value:string){
     localStorage.setItem(name,value);
   }
